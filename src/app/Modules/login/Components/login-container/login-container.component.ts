@@ -10,4 +10,8 @@ export class LoginContainerComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  getChildData(event: any): void {
+    console.log("hi")
+    console.log(event);
+  }
 }

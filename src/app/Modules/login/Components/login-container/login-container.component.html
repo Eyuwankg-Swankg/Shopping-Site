@@ -1,9 +1,12 @@
 <div>
   <div id="header">
-    <img [src]="logo" alt="">
+    <img [src]="logo" alt="" />
   </div>
   <div class="login-container">
+    <app-sign-up
+      class="sign-up"
+      (childEvent)="getChildData($event)"
+    ></app-sign-up>
     <app-sign-in class="sign-in"></app-sign-in>
-    <app-sign-up class="sign-up"></app-sign-up>
   </div>
 </div>

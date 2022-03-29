@@ -7,6 +7,21 @@
         ngNativeValidate
       >
         <div class="sign-in">Sign In</div>
+        <!-- Username -->
+        <div class="form-group">
+          <label id="words_1" for="username">Username </label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            aria-describedby="usernameHelp"
+            placeholder="Username"
+            name="username"
+            [(ngModel)]="username"
+            required disabled
+          />
+          <small id="usernameHelp" class="form-text text-muted"></small>
+        </div>
         <!-- Email -->
         <div class="form-group">
           <label id="words_1" for="exampleInputEmail1">Email </label>
@@ -19,6 +34,7 @@
             name="email"
             [(ngModel)]="email"
             required
+            disabled
           />
           <small id="emailHelp" class="form-text text-muted"></small>
         </div>
@@ -34,6 +50,7 @@
             name="mobile"
             [(ngModel)]="mobile"
             required
+            disabled
           />
           <small id="mobilHelp" class="form-text text-muted"></small>
         </div>
@@ -54,7 +71,7 @@
           type="submit"
           class="btn btn-warning"
           id="sign-in"
-          value="Submit"
+          value="Sign In"
         />
       </form>
     </div>

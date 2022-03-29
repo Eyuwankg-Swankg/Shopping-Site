@@ -1,13 +1,14 @@
-.container{
+.container {
   width: 100%;
 }
 
-.row{
-  width:80%;
+.row {
+  width: 80%;
 }
-.form-group{
+.form-group {
   margin-bottom: 20px;
 }
+
 
 form {
   border: 1px solid lightgrey;
@@ -34,7 +35,7 @@ form {
   font-weight: bold;
 }
 
-#sign-in {
+#sign-up {
   margin-bottom: 10px;
 }
 #exampleCheck1 {
@@ -51,4 +52,10 @@ form {
 #grey-button {
   background-color: lightgrey;
   border: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

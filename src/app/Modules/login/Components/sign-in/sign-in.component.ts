@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sign-in',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in.component.css'],
 })
 export class SignInComponent implements OnInit {
+  username: string = '';
   email: string = '';
   mobile: string = '';
   password: string = '';
@@ -14,6 +15,6 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {}
 
   handleSubmit(form: any): void {
-    console.log(form);
+    
   }
 }
