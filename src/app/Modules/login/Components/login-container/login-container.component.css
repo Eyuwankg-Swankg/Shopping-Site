@@ -1,4 +1,21 @@
-.header{
+#header {
+  width: fit;
+  height: 9vh;
+  text-align: center;
+  /* background-color: #131921; */
+}
+#header img {
+  height: 5em;
+  transform: translateX(-10px);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+}
+
+.sign-in,.sign-up{
   width: 100%;
-  
 }

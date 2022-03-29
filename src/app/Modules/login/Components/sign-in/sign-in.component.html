@@ -1,1 +1,62 @@
-<p>sign-in works!</p>
+<div class="d-flex flex-row justify-content-center container">
+  <div class="row">
+    <div class="col-md">
+      <form
+        #form="ngForm"
+        (ngSubmit)="handleSubmit(form.value)"
+        ngNativeValidate
+      >
+        <div class="sign-in">Sign In</div>
+        <!-- Email -->
+        <div class="form-group">
+          <label id="words_1" for="exampleInputEmail1">Email </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Email"
+            name="email"
+            [(ngModel)]="email"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <!-- Mobile -->
+        <div class="form-group">
+          <label id="words_1" for="mobile">Mobile </label>
+          <input
+            type="number"
+            class="form-control"
+            id="mobile"
+            aria-describedby="mobile"
+            placeholder="Mobile Number"
+            name="mobile"
+            [(ngModel)]="mobile"
+            required
+          />
+          <small id="mobilHelp" class="form-text text-muted"></small>
+        </div>
+        <!-- Password -->
+        <div class="form-group">
+          <label id="words_2" for="password">Password </label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            name="password"
+            [(ngModel)]="password"
+            required
+          />
+        </div>
+        <input
+          type="submit"
+          class="btn btn-warning"
+          id="sign-in"
+          value="Submit"
+        />
+      </form>
+    </div>
+  </div>
+</div>

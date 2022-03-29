@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-login-container',
   templateUrl: './login-container.component.html',
-  styleUrls: ['./login-container.component.css']
+  styleUrls: ['./login-container.component.css'],
 })
 export class LoginContainerComponent implements OnInit {
+  logo: string = '/assets/images/amazon_icon_black.png';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
