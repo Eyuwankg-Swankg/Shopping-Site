@@ -1,23 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { ShoppingRoutingModule } from './shopping-routing.module';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SideBarComponent } from './Components/side-bar/side-bar.component';
 import { ShoppingContainerComponent } from './Components/shopping-container/shopping-container.component';
 import { ContentComponent } from './Components/content/content.component';
 
-
 @NgModule({
   declarations: [
     NavbarComponent,
     SideBarComponent,
     ShoppingContainerComponent,
-    ContentComponent
+    ContentComponent,
   ],
-  imports: [
-    CommonModule,
-    ShoppingRoutingModule
-  ]
+  imports: [CommonModule, ShoppingRoutingModule,FontAwesomeModule],
 })
-export class ShoppingModule { }
+export class ShoppingModule {}

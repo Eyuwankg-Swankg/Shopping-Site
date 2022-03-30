@@ -1,3 +1,22 @@
 <div id="header">
-  <img [src]="logo" alt="Logo">
+  <img [src]="logo" alt="Logo" />
+  <div id="search">
+    <input class="form-control" type="search" aria-label="Search" />
+    <button class="btn btn-warning" type="button">Search</button>
+  </div>
+  <div class="login">
+    <div *ngIf="data!=null"  class="icon snow">
+      <fa-icon [icon]="user"></fa-icon>
+      <h5>{{data.username}}</h5>
+    </div>
+    <div *ngIf="data==null">
+      <button class="btn btn-warning" type="button" (click)="goToHome()">
+        <fa-icon [icon]="user"></fa-icon>
+        Login</button>
+    </div>
+  </div>
+  <div class="cart snow">
+    <fa-icon [icon]='cartIcon'></fa-icon>
+  {{itemCount}}
+  </div>
 </div>
