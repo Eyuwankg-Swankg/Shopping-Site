@@ -10,13 +10,11 @@ export class NavbarComponent implements OnInit {
   user: any = faUser;
   cartIcon: any = faCartShopping;
   logo: string = '/assets/images/logo.png';
-  itemCount: number = 0;
   @Input() data: any;
+  @Input() itemCount=0;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    
-    console.log(this.data);
   }
   goToHome() {this.router.navigate(['/login'])}
 }

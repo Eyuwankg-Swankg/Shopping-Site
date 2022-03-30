@@ -1,7 +1,7 @@
 <div class="conatiner">
-  <app-navbar [data]="userData"></app-navbar>
+  <app-navbar [data]="userData" [itemCount]="CartCount"></app-navbar>
   <div class="main-conatiner">
     <app-side-bar></app-side-bar>
-    <app-content></app-content>
+    <app-content [store]="data" (increaseCount)="handleEvent($event)"></app-content>
   </div>
 </div>

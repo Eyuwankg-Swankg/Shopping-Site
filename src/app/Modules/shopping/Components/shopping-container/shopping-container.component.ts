@@ -62,7 +62,7 @@ export class ShoppingContainerComponent implements OnInit {
     {
       id: 5,
       title:
-        "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+        "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain",
       price: 695,
       description:
         "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
@@ -274,11 +274,14 @@ export class ShoppingContainerComponent implements OnInit {
     },
   ];
   userData: any = { email: '', mobile: '', password: '', username: '' };
-  constructor() {
-  }
-
+  constructor() {}
+  CartCount: number = 0;
   ngOnInit(): void {
     this.userData = sessionStorage.getItem('credentials');
     if (this.userData) this.userData = JSON.parse(this.userData);
+  }
+  handleEvent(event: any): void {
+    console.log(event);
+    this.CartCount += 1;
   }
 }

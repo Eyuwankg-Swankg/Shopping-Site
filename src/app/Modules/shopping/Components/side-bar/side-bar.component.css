@@ -1,0 +1,10 @@
+.side-bar{
+  height: 90vh;
+  padding:10px 0px;
+  
+  border-right: 3px solid #131921;
+  border-bottom: 3px solid #131921;
+}
+.heading{
+  text-align: center;
+}
