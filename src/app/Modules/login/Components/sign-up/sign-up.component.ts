@@ -7,10 +7,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
   @Output() credentials = new EventEmitter<string>();
-  email: string = 'eyu@e.cx';
-  mobile: string = '878787';
-  password: string = 'eyuwankg';
-  username: string = 'ljne';
+  email: string = '';
+  mobile: string = '';
+  password: string = '';
+  username: string = '';
 
   constructor() {}
 
