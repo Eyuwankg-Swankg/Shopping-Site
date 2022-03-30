@@ -1,0 +1,11 @@
+#header {
+  width: fit;
+  height: 10vh;
+  background-color: #131921;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header img {
+  height: 3em;
+}

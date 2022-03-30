@@ -9,7 +9,7 @@ export class SignUpComponent implements OnInit {
   @Output() credentials = new EventEmitter<string>();
   email: string = 'eyu@e.cx';
   mobile: string = '878787';
-  password: string = 'kdaukudc';
+  password: string = 'eyuwankg';
   username: string = 'ljne';
 
   constructor() {}

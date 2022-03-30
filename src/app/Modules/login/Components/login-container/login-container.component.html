@@ -5,8 +5,8 @@
   <div class="login-container">
     <app-sign-up
       class="sign-up"
-      (childEvent)="getChildData($event)"
+      (credentials)="getChildData($event)"
     ></app-sign-up>
-    <app-sign-in class="sign-in"></app-sign-in>
+    <app-sign-in [userData]="signUpData" class="sign-in"></app-sign-in>
   </div>
 </div>

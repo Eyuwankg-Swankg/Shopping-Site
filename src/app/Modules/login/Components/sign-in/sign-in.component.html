@@ -17,8 +17,9 @@
             aria-describedby="usernameHelp"
             placeholder="Username"
             name="username"
-            [(ngModel)]="username"
-            required disabled
+            [(ngModel)]="userData.username"
+            required
+            disabled
           />
           <small id="usernameHelp" class="form-text text-muted"></small>
         </div>
@@ -32,7 +33,7 @@
             aria-describedby="emailHelp"
             placeholder="Email"
             name="email"
-            [(ngModel)]="email"
+            [(ngModel)]="userData.email"
             required
             disabled
           />
@@ -48,7 +49,7 @@
             aria-describedby="mobile"
             placeholder="Mobile Number"
             name="mobile"
-            [(ngModel)]="mobile"
+            [(ngModel)]="userData.mobile"
             required
             disabled
           />

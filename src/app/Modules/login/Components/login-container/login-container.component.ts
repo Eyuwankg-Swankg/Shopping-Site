@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login-container',
@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginContainerComponent implements OnInit {
   logo: string = '/assets/images/amazon_icon_black.png';
+  signUpData: any = {};
   constructor() {}
 
   ngOnInit(): void {}
   getChildData(event: any): void {
-    console.log("hi")
-    console.log(event);
+    this.signUpData = JSON.parse(event);
   }
 }
