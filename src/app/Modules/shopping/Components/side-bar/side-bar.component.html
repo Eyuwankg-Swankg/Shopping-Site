@@ -1,8 +1,38 @@
 <div class="side-bar">
   <h4 class="heading">Filters</h4>
   <div class="filters">
-    <div class="range">
-
-    </div>
+    <input
+    type="number"
+    class="form-control"
+    id="minimum"
+    aria-describedby="minimum"
+    placeholder="Minimum Price"
+    name="minimum"
+    [(ngModel)]="minimum"
+    required
+  />
+    <input
+    type="number"
+    class="form-control"
+    id="maximum"
+    aria-describedby="maximum"
+    placeholder="Maximum Price"
+    name="maximum"
+    [(ngModel)]="maximum"
+    required
+  />
+    <input
+    type="number"
+    class="form-control"
+    id="rating"
+    aria-describedby="rating"
+    placeholder="Rating (0.0-5)"
+    name="rating"
+    min="0"
+    max="5"
+    [(ngModel)]="rating"
+    required
+  />
+  <button class="btn btn-warning" (click)="handleSearch()">Search</button>
   </div>
 </div>

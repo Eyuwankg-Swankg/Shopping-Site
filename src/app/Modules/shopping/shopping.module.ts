@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { ShoppingRoutingModule } from './shopping-routing.module';
 import { NavbarComponent } from './Components/navbar/navbar.component';
@@ -14,6 +15,6 @@ import { ContentComponent } from './Components/content/content.component';
     ShoppingContainerComponent,
     ContentComponent,
   ],
-  imports: [CommonModule, ShoppingRoutingModule,FontAwesomeModule],
+  imports: [CommonModule, ShoppingRoutingModule,FontAwesomeModule,FormsModule],
 })
 export class ShoppingModule {}

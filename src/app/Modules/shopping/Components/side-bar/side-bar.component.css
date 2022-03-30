@@ -1,10 +1,32 @@
 .side-bar{
   height: 90vh;
   padding:10px 0px;
-  
   border-right: 3px solid #131921;
   border-bottom: 3px solid #131921;
 }
 .heading{
   text-align: center;
+  border-bottom: 1px solid #131921;
+}
+
+.filter-input{
+  width: 80%;
+}
+
+.form-control{
+  width: 90%;
+}
+
+.filters{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

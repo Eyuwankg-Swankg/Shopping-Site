@@ -273,6 +273,7 @@ export class ShoppingContainerComponent implements OnInit {
       },
     },
   ];
+  displayData: Array<Object> = this.data;
   userData: any = { email: '', mobile: '', password: '', username: '' };
   constructor() {}
   CartCount: number = 0;
@@ -281,7 +282,23 @@ export class ShoppingContainerComponent implements OnInit {
     if (this.userData) this.userData = JSON.parse(this.userData);
   }
   handleEvent(event: any): void {
-    console.log(event);
     this.CartCount += 1;
+  }
+  handleFilters(event: any): void {
+    var filterData: any = JSON.parse(event);
+    var tempLength = this.displayData.length;
+    var i:number=0;
+    for (i = 0; i < this.data.length; i++) {
+      let item: any = this.data[i];
+      if (
+        item.price >= filterData.min &&
+        item.price <= filterData.max &&
+        item.rating.rate >= filterData.rating
+      )
+        this.displayData.push(this.data[i]);
+      if (i >= 20) break;
+    }
+    i=0;
+    this.displayData.splice(0, tempLength);
   }
 }
